@@ -1,0 +1,275 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width:100%;
+}
+ul {
+    list-style: none;
+}
+
+#Date {
+    text-align:center;
+}
+/* Navigation Bar*/
+
+#nav_bar {
+    float:right;
+}
+
+#nav_bar li {
+    display: inline-block;
+    padding: 8px;
+}
+
+#nav_bar #sign_in {
+    background:#4887ef;
+    margin-right:25px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.nav-links {
+    color: #404040;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+li.nav-links a:hover {
+    text-decoration:underline;
+}
+
+#sign_in:hover {
+    box-shadow: 1px 1px 5px #999;
+}
+
+#sign_in {
+    color:white;
+}
+
+/*Google center*/
+
+.google {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top:250px;
+    padding-bottom:20px;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-search {
+    width: 450px;
+    line-height: 40px;
+    padding: 20px 10px;
+}
+
+.form .form-search {
+    padding: 0 8px;
+    border-radius: 40px;
+    border: 1px solid #dfe1e5;
+    
+}
+
+.form, .close-icon, .form-search{
+    position: relative;
+    padding: 10px;
+}
+
+
+.glow:hover {
+    box-shadow: 0 5px 10px #dfe1e5;
+}
+
+
+.close-icon {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+.close-icon:after {
+        content: "X";
+        display: block;
+        width: 15px;
+        height: 20px;
+        position: absolute;
+        background-color: rgba(0, 0, 170, 0.00);
+        z-index: 1;
+        right: 35px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 2px;
+        border-radius: 50%;
+        text-align: center;
+        color: grey;
+        font-weight: normal;
+        font-size: 18px;
+        cursor: pointer;
+ }
+
+
+
+.form-search:not(:valid) ~ .close-icon {
+    display: none;
+}
+   
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 300px;
+}
+
+.googleSearch:hover {
+    border: 1px solid #000000;
+    }
+
+.buttons input[type="submit"], .imFeelingLucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    outline:none;
+}
+
+/* FOOTER */
+footer {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+    footer ul li {
+        display: inline;
+        color: #666666;
+        font-size: 14px;
+        padding: 13px;
+    }
+
+    footer ul {
+        float: left;
+        padding: 1px;
+    }
+
+        footer ul a:hover {
+            text-decoration: underline;
+        }
+
+.footer-right {
+    float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+
+    li.nav-links a {
+        display: none;
+    }
+
+    #google_logo {
+        padding: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #form-search {
+        width: 80%;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+        footer ul {
+            float: none;
+            padding-bottom: 2px;
+        }
+
+    .footer-left {
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 565px) {
+
+    li.nav-links a {
+        display: none;
+    }
+
+
+    #google_logo {
+        padding: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #form-search {
+        width: 80%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+        footer ul {
+            float: none;
+            padding-bottom: 2px;
+        }
+
+    .footer-left {
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}

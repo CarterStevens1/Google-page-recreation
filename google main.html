@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta charset="utf-8" />
+    <title>Google Homepage</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script type = "text/javascript" src= "Script1.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
+                <li class="nav-links"><a href="#">Images</a></li>
+                <li id="sign_in"><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="google">
+        <a href="#">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </a>
+    </div>
+
+    <div class="form ">
+        <form>
+            <label for="form-search"></label>
+            <input type="text" class="form-search" placeholder="Search Google or type in URL">
+            <button class="close-icon" type="reset"></button>
+        </form>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Google Search" class="googleSearch">
+        <input type="submit" value="I'm feeling lucky!" class="imFeelingLucky">
+    </div>
+
+    <p id="Date"></p>
+
+    <script>
+
+        var today = new Date();
+
+        var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+        var dateTime = date + ' ' + time;
+
+        document.getElementById("Date").innerHTML = dateTime;
+
+    </script>
+
+
+
+
+    <footer>
+        <ul class="footer-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+        </ul>
+
+        <ul class="footer-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
