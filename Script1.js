@@ -1,12 +1,12 @@
 // JavaScript source code
 
-document.getElementById("Date").innerHTML = dateTime;
-    var today = new Date();
+function display_c() {
+    var refresh = 1000; // Refresh rate in milli seconds
+    mytime = setTimeout('display_ct()', refresh)
 
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-    var dateTime = date+' '+time;
-
-    
+}
+    function display_ct() { 
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+    }

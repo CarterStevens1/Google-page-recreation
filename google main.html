@@ -9,7 +9,7 @@
     <script type = "text/javascript" src= "Script1.js"></script>
 </head>
 
-<body>
+<body onload=display_ct();>
     <header>
         <nav>
             <ul id="nav_bar">
@@ -38,21 +38,7 @@
         <input type="submit" value="I'm feeling lucky!" class="imFeelingLucky">
     </div>
 
-    <p id="Date"></p>
-
-    <script>
-
-        var today = new Date();
-
-        var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-        var dateTime = date + ' ' + time;
-
-        document.getElementById("Date").innerHTML = dateTime;
-
-    </script>
+    <p id='ct'></p>
 
 
 
