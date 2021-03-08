@@ -9,4 +9,8 @@ function display_c() {
         var x = new Date()
         document.getElementById('ct').innerHTML = x;
         display_c();
-    }
+}
+
+function letterchange() {
+    document.getElementById("imag").value = 'image';
+}
