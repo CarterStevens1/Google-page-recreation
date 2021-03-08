@@ -36,7 +36,7 @@ div {
 }
 
 .search_content {
-    width: 40%;
+    width: 50%;
     float: left;
     height: 100%;
     overflow: hidden;
@@ -51,7 +51,7 @@ input[type="text"], input[type="password"], textarea, select {
 }
 
 .form-search {
-    width: 550px;
+    width: 500px;
     line-height: 45px;
     padding: 20px 10px;
     margin-top: -10px;
